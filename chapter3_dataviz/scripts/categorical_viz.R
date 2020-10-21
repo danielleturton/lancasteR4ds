@@ -3,7 +3,7 @@
 library(tidyverse)
 
 ## LOAD DATA ####
-td_data = read.csv("chapter3_visualisation/data/td.csv")
+td_data = read.csv("chapter3_dataviz/data/td.csv")
 
 td_clean = td_data %>%
   mutate(td = factor(td, levels = c("retained", "deleted"))) %>%
