@@ -13,7 +13,7 @@ get_formants <- function(speaker, max_formant){
   praat_run("get_formants.praat", speaker, max_formant, 5, capture = TRUE) %>% read_csv()
 }
 
-# get formants for each speaker + put in tibble (+ factorise variables)
+# get formants for each speaker + put in tibble
 # ...this creates a column called speaker and assigns a speaker number to each speaker's set of data
 data <- bind_rows(
   "872" = get_formants("speaker872/", 5500),
