@@ -1,0 +1,23 @@
+---
+title: "Dialect survey"
+author: "Danielle Turton"
+date: "25/11/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Intro
+
+This is my dialect project
+
+```{r}
+load("write_up/dialect_env.R")
+library(tidyverse)
+ggplot(data_clean, aes(occ_code.1, fill = pour.poor)) +
+  geom_bar(position = "fill")
+```
+
+Isn't it nice?
